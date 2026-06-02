@@ -16,6 +16,7 @@ func main() {
 
 	// alias
 	//int32 = Rune
+	// posso usar o rune no lugar do int32 vai ser o mesmo valor
 	var numero3 rune = 14124
 	fmt.Println(numero3)
 
@@ -29,6 +30,9 @@ func main() {
 
 	var numeroReal2 float64 = 12.23487353
 	fmt.Println(numeroReal2)
+
+	numeroReal4 := 32.384
+	fmt.Println(numeroReal4)
 
 	// FIM NÚMEROS REAIS
 	var str string = "kasdjklfa"
