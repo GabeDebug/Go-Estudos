@@ -38,6 +38,7 @@ func main() {
 	var str string = "kasdjklfa"
 	fmt.Println(str)
 
+	// o char não tem no golang
 	char := 'b'
 	fmt.Println(char)
 
