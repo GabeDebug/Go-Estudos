@@ -12,6 +12,10 @@ func calculoMatematicos(n1, n2 int8) (int8, int8){
 		return soma, subtracao
 }
 
+func saudacao(nomes string) string {
+	return "Olá, " + nomes + "!"
+}
+
 func main() {
 	somar := soma(10,20)
 	fmt.Println(somar)
@@ -27,4 +31,6 @@ func main() {
 	// passando o _ eu sou vou pega o resultado da Primeira conta
 	fmt.Println(resultadoSoma,resultadoSubtracao)
 
+	resultado := saudacao("Gabriel")
+	fmt.Println(resultado)
 }
