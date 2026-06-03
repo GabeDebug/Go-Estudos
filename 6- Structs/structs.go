@@ -2,17 +2,18 @@ package main
 
 import "fmt"
 
+
 type usuario struct {
 	Nome string
 	Idade uint8
-	endereco string
+	Endereco string
 }
 
 // structs e uma coleção de campo
 func main(){
 	// a forma mais recomendada para se trabalha com structs
 	// primeira jeito
-	usuario1 := usuario{Nome: "Gabriel", Idade: 30, endereco: "Rua dos bobos"}
+	usuario1 := usuario{Nome: "Gabriel", Idade: 30, Endereco: "Rua dos bobos"}
 	fmt.Println(usuario1)
 
 	// segundo jeito
