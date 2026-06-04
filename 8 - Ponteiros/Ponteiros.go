@@ -2,7 +2,11 @@ package main
 
 import "fmt"
 
+<<<<<<< HEAD
 func main(){
+=======
+func main() {
+>>>>>>> c1a3dff (Reconectando repositório após formatação)
 	//Ponteiros
 	fmt.Println("Ponteiros")
 
@@ -13,7 +17,11 @@ func main(){
 	fmt.Println(variavel1, variavel2)
 
 	// Ponteiros é referencia de memoria
+<<<<<<< HEAD
 	var variavel3 int 
+=======
+	var variavel3 int
+>>>>>>> c1a3dff (Reconectando repositório após formatação)
 	var ponteiro *int
 
 	variavel3 = 100
@@ -21,7 +29,14 @@ func main(){
 
 	fmt.Println(variavel3, *ponteiro) // desreferenciação
 	/*
+<<<<<<< HEAD
 	quando passo o * na frente eu estou dizendo 
 	que vai nesse endereço de memoria
 	*/
 }
+=======
+		quando passo o * na frente eu estou dizendo
+		que vai nesse endereço de memoria
+	*/
+}
+>>>>>>> c1a3dff (Reconectando repositório após formatação)
