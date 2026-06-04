@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	//Ponteiros
 	fmt.Println("Ponteiros")
 
@@ -13,7 +13,7 @@ func main(){
 	fmt.Println(variavel1, variavel2)
 
 	// Ponteiros é referencia de memoria
-	var variavel3 int 
+	var variavel3 int
 	var ponteiro *int
 
 	variavel3 = 100
@@ -21,7 +21,7 @@ func main(){
 
 	fmt.Println(variavel3, *ponteiro) // desreferenciação
 	/*
-	quando passo o * na frente eu estou dizendo 
-	que vai nesse endereço de memoria
+		quando passo o * na frente eu estou dizendo
+		que vai nesse endereço de memoria
 	*/
 }
