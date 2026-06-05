@@ -45,4 +45,24 @@ func main() {
 		o map em Go serve para fazer busca rápidas por chave
 		quando você precisa associar um valor a um identificador
 	*/
+
+	nomes := map[string]int{
+		"Gabriel": 1,
+		"joão":    2,
+		"Maria":   3,
+	}
+
+	delete(nomes, "Gabriel")
+	// aqui vou deleta o valor que está dentro do map
+
+	fmt.Println(nomes)
+
+	nomes2 := map[int]string{
+		1: "Gabriel",
+		2: "joão",
+		3: "Maria",
+	}
+
+	fmt.Println(nomes2)
+
 }
