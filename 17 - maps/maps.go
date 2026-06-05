@@ -1,19 +1,46 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// estudos sobre map
-	idades := map[string]int{
-		"joão":  25,
-		"maria": 26,
-		"jose":  27,
+	fmt.Println("Maps")
+
+	// dentro do cochetes e o tipos da chave
+	// e fora e tipo do valores
+	usuario := map[string]string{
+		"nome":      "gabriel",
+		"sobrenome": "Almeida",
 	}
 
-	// idades["ana"] = 25
-	// idades["João"] = 30
+	/*
+		estou passando um map com valor de string
+		e passando o segundo map com mesmo valor
+	*/
+	usuario2 := map[string]map[string]string{
+		"curso": {
+			"Golang": "Golang básico",
+		},
+		"Faculdade": {
+			"Faculdade": "Estácio",
+		},
+	}
+	fmt.Println(usuario2)
+	delete(usuario2, "curso")
+	// deletando o valor dentro da chaves
+	fmt.Println(usuario2)
 
-	fmt.Println(idades["joão"])
+	// para adicionar
+	usuario2["Signo"] = map[string]string{
+		"Nome": "áries",
+	}
+
+	fmt.Println(usuario2)
+
+	fmt.Println(usuario)
+	// pra acessa eu passo [""] ai consigo acessar
 	/*
 		o map em Go serve para fazer busca rápidas por chave
 		quando você precisa associar um valor a um identificador
