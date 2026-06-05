@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func aray() {
 	arr := [3]int{10, 20, 30}
 	arr2 := [10]int{1: 100, 9: 200}
 	// eu posso fazer todo tipo de array
@@ -41,4 +41,5 @@ func main() {
 	fmt.Println(slice2, len(slice2), cap(slice2))
 	// esse slice tem capacidade de 3 elemento
 	// e está capacitando 3 elemento
+	array3()
 }
