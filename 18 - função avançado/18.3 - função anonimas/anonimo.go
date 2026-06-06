@@ -31,4 +31,9 @@ func main() {
 	}
 	resultado := numeros2(1, 1)
 	fmt.Println(resultado)
+
+	resultado3 := func(texto string) string {
+		return fmt.Sprintf("Hello -> %s", texto)
+	}("Gabriel")
+	fmt.Println(resultado3)
 }
