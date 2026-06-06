@@ -23,6 +23,12 @@ func main() {
 	fmt.Println(retorno2)
 
 	//! sintaxe da função anonima
-	func(){}()
+	func() {}()
 
+	//? como criar uma função anonima usando soma
+	numeros2 := func(a, b int) int {
+		return a + b
+	}
+	resultado := numeros2(1, 1)
+	fmt.Println(resultado)
 }
