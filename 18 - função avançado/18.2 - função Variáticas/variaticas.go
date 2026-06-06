@@ -25,7 +25,7 @@ func Escrever(texto string, numeros ...int) {
 }
 
 func main() {
-	Escrever("Estudando Golang", 1, 24, 1, 24, 12, 31, 25, 12, 3)
+	Escrever("Estudando Go", 1, 24, 1, 24, 12, 31, 25, 12, 3)
 	totalDaSoma := soma(1, 2, 4, 5, 1, 5, 12, 3, 41)
 	fmt.Println(totalDaSoma)
 	escrever("Hello World", 1, 1, 1, 23, 5, 123, 1)
