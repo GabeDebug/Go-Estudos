@@ -22,8 +22,8 @@ func alunoAprovado(n1, n2 float32) bool {
 		return true
 		// aqui vai ser aprovado
 	}
-
 	return false
+
 	// aqui vai ser reprovado
 }
 
