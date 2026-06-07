@@ -32,6 +32,7 @@ func main() {
 
 	fmt.Println(mediaAluno(6, 6))
 	fmt.Println("Pós execução!")
+	// aqui vai ser a pós execução quando eu chama ela 
 }
 
 /*
