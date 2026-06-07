@@ -2,14 +2,48 @@ package main
 
 import "fmt"
 
+func funcao1() {
+	fmt.Println("executando na tela 1 ")
+}
+
+func funcao2() {
+	fmt.Println("executando na tela 2 ")
+}
+
+func alunoAprovado(n1, n2 float32) bool {
+	defer fmt.Println("Media calculada. resutlado será retornado")
+	// vai ser executado antes do return independente quem seja!
+
+	fmt.Println("aprovado ou não?")
+
+	media := (n1 + n2) / 2
+
+	if media >= 6 {
+		return true
+		// aqui vai ser aprovado
+	}
+
+	return false
+	// aqui vai ser reprovado
+}
+
+func calculor(a, b int) int {
+	defer fmt.Println("Está sendo calculado.")
+	// vai ser executado antes do return
+
+	soma := a + b
+	return soma
+}
+
 func main() {
-	fmt.Println("Inicio")
 
-	defer fmt.Println("vai ser executado no final")
-	/*
-		Quando usamos o defer a função que estiver nela
-		vai ser executada por ultimo
-	*/
+	resultadoSoma := calculor(1, 5)
+	fmt.Println(resultadoSoma)
 
-	fmt.Println("Vai ser executado em segundo")
+	resultado := alunoAprovado(7, 8)
+	fmt.Println(resultado)
+
+	// DEFER => ADIAR
+	// defer funcao1()
+	// funcao2()
 }
