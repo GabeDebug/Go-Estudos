@@ -23,6 +23,16 @@ func alunos() func() {
 	return funcao
 }
 
+func notas() func() {
+	notas := "notas do aluno"
+
+	funcao := func() {
+		fmt.Println(notas)
+	}
+
+	return funcao
+}
+
 func main() {
 	texto := "Dentro do Main"
 	fmt.Println(texto)
