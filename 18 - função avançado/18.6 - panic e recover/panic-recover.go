@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func recuperarExecucao() {
-
 	if r := recover(); r != nil {
 		//Se existe um erro capturado (r não é vazio), entra no bloco
 		fmt.Println("Execução recuperada")
@@ -32,7 +31,7 @@ func main() {
 
 	fmt.Println(mediaAluno(6, 6))
 	fmt.Println("Pós execução!")
-	// aqui vai ser a pós execução quando eu chama ela 
+	// aqui vai ser a pós execução quando eu chama ela
 }
 
 /*
