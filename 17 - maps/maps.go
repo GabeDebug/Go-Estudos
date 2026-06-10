@@ -27,6 +27,7 @@ func main() {
 			"Faculdade": "Estácio",
 		},
 	}
+
 	fmt.Println(usuario2)
 	delete(usuario2, "curso")
 	// deletando o valor dentro da chaves

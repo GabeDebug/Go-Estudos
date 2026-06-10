@@ -26,4 +26,18 @@ func main() {
 	//Clone da string
 	new := strings.Clone(texto)
 	fmt.Println(new)
+
+	//Ver se contem a string
+	novo2 := strings.Contains(texto, "Testando")
+	fmt.Println(novo2)
+
+	//Deixa a string em letra minuscula
+	novo3 := strings.ToLower(texto)
+	fmt.Println(novo3)
+
+	//Adicionar o valor dentro string
+	novo4 := []string{"1", "2", "4"}
+	resultado := strings.Join(novo4, ",")
+
+	fmt.Println(resultado)
 }
