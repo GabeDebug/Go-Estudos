@@ -14,7 +14,6 @@ func escrevernum(numeros int) {
 }
 
 func main() {
-
 	var WaitGroup sync.WaitGroup
 
 	WaitGroup.Add(5)
