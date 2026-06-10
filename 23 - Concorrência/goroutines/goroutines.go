@@ -13,6 +13,13 @@ func main() {
 	/*
 		quando usamos uma goroutines e dizer que pode executa essa função
 		mais não deixa ela termina pra executa a proxima
+
+		O que é uma Goroutine?
+		Uma goroutine é uma função que é executada concorrentemente (em paralelo ou de forma intercalada) com outras goroutines. Elas são semelhantes a threads, mas muito mais leves.
+
+		Uma goroutine usa apenas alguns kilobytes de memória na pilha (stack).
+		O runtime do Go gerencia automaticamente as goroutines (não o sistema operacional).
+		Você pode ter dezenas de milhares ou até centenas de milhares de goroutines rodando ao mesmo tempo sem problemas.
 	*/
 
 }
