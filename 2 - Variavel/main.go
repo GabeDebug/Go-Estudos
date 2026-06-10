@@ -22,8 +22,11 @@ func main() {
 
 	// outro forma de fazer variável
 	variavel5, variavel6 := "variavel5", "Variavel6"
-	fmt.Println(variavel5,variavel6)
+	fmt.Println(variavel5, variavel6)
 
 	const constante1 string = "valor 1 da contante"
 	fmt.Println(constante1)
+
+	user := "relembrando os valores de variavel"
+	fmt.Println(user)
 }
