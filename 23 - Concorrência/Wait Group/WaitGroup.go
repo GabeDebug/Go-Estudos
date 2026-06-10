@@ -9,13 +9,15 @@ import (
 // Sincronizando a goroutines
 
 func main() {
+	// Cria uma WaitGroup - ela funciona como um contador de tarefas
 	var WaitGroup sync.WaitGroup
 
+	// Adicionamos 2 ao contador porque vamos lançar 3 goroutines
 	WaitGroup.Add(3)
 
 	go func() {
 		escrever("Olá mundo")
-		WaitGroup.Done()
+		WaitGroup.Done() // Informa que esta goroutine terminou
 		/*
 			Quando passamos o Done ele tira -1 do contator
 		*/
@@ -23,7 +25,7 @@ func main() {
 
 	go func() {
 		escrever("programando em Golang")
-		WaitGroup.Done()
+		WaitGroup.Done() // Informa que esta goroutine terminou
 		/*
 			Quando passamos o Done ele tira -1 do contator
 		*/
@@ -35,6 +37,8 @@ func main() {
 	}()
 
 	WaitGroup.Wait()
+
+	fmt.Println("Todos os goroutines finalizaram!")
 }
 
 func escrever(texto string) {
